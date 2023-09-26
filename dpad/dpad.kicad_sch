@@ -393,7 +393,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 72.39 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 04289fe4-5e04-48a8-83e8-100430ba9f01)
-    (property "Reference" "H7" (at 74.93 121.92 0)
+    (property "Reference" "H3" (at 74.93 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 74.93 124.46 0)
@@ -409,7 +409,7 @@
     (instances
       (project "dpad"
         (path "/050a8889-8bd8-4da8-9640-d64cfc084070"
-          (reference "H7") (unit 1)
+          (reference "H3") (unit 1)
         )
       )
     )
@@ -443,7 +443,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 54.61 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 103e5874-e3cd-4bc4-b8ba-a9129ad8d615)
-    (property "Reference" "H5" (at 57.15 121.92 0)
+    (property "Reference" "H1" (at 57.15 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 57.15 124.46 0)
@@ -459,7 +459,7 @@
     (instances
       (project "dpad"
         (path "/050a8889-8bd8-4da8-9640-d64cfc084070"
-          (reference "H5") (unit 1)
+          (reference "H1") (unit 1)
         )
       )
     )
@@ -468,7 +468,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 63.5 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 137a7a39-d950-4169-8ec2-1974e50928f2)
-    (property "Reference" "H6" (at 66.04 121.92 0)
+    (property "Reference" "H2" (at 66.04 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 66.04 124.46 0)
@@ -484,7 +484,7 @@
     (instances
       (project "dpad"
         (path "/050a8889-8bd8-4da8-9640-d64cfc084070"
-          (reference "H6") (unit 1)
+          (reference "H2") (unit 1)
         )
       )
     )
@@ -568,13 +568,13 @@
   (symbol (lib_id "Connector:Conn_01x05_Socket") (at 58.42 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 63fb9461-17fc-469e-9edb-d424210a3069)
-    (property "Reference" "J6" (at 59.69 90.17 0)
+    (property "Reference" "J1" (at 59.69 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x05_Socket" (at 59.69 92.71 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical" (at 58.42 91.44 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" (at 58.42 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 58.42 91.44 0)
@@ -588,7 +588,7 @@
     (instances
       (project "dpad"
         (path "/050a8889-8bd8-4da8-9640-d64cfc084070"
-          (reference "J6") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -622,7 +622,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 81.28 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 71df2028-9ff7-47ce-a905-a3182902bfc2)
-    (property "Reference" "H8" (at 83.82 121.92 0)
+    (property "Reference" "H4" (at 83.82 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 83.82 124.46 0)
@@ -638,7 +638,7 @@
     (instances
       (project "dpad"
         (path "/050a8889-8bd8-4da8-9640-d64cfc084070"
-          (reference "H8") (unit 1)
+          (reference "H4") (unit 1)
         )
       )
     )
@@ -653,7 +653,7 @@
     (property "Value" "SW_Push_Dual" (at 59.69 50.8 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Button_Switch_THT:SW_PUSH-12mm" (at 59.69 50.8 0)
+    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 59.69 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 59.69 50.8 0)
@@ -754,7 +754,7 @@
     (property "Value" "SW_Push_Dual" (at 93.98 50.8 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Button_Switch_THT:SW_PUSH-12mm" (at 93.98 50.8 0)
+    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 93.98 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 93.98 50.8 0)
@@ -780,7 +780,7 @@
     (property "Value" "SW_Push_Dual" (at 76.2 67.31 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Button_Switch_THT:SW_PUSH-12mm" (at 76.2 67.31 0)
+    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 76.2 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 76.2 67.31 0)
@@ -806,7 +806,7 @@
     (property "Value" "SW_Push_Dual" (at 77.47 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Button_Switch_THT:SW_PUSH-12mm" (at 77.47 36.83 0)
+    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 77.47 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 77.47 36.83 0)
