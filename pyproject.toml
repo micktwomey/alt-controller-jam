@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "alt-controller-jam"
+version = "0.1.0"
+description = "Gamecraft Alt-Controller-Jam 2023 Code"
+authors = ["Michael Twomey <mick@twomeylee.name>"]
+license = "MIT"
+readme = "README.md"
+
+packages = [{ include = "alt_controller_jam", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.6.1"
+ruff = "^0.1.3"
+black = "^23.10.1"
+circup = "^1.3.0"
+rshell = "^0.0.31"
+pipkin = "^2.0b2"
+adafruit-circuitpython-hid = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
