@@ -24,6 +24,17 @@ mypy:
 eject-circuitpython:
   diskutil eject /Volumes/CIRCUITPY
 
+# TODO: broken due to pipkin being unhappy about uninstalling old version to install new version
+# build-circuitpython:
+#   #!/bin/bash
+#   set -euo pipefail
+#   mkdir -p /tmp/circuitpython/lib
+#   # poetry build
+#   # poetry run pipkin -m /tmp/circuitpython/ install dist/alt_controller_jam-$(poetry version -s)-py3-none-any.whl
+#   poetry run pipkin -m /tmp/circuitpython/ install .
+#   cp boards/circuitpython/boot.py /tmp/circuitpython/boot.py
+#   cp boards/circuitpython/code.py /tmp/circuitpython/code.py
+
 deploy-circuitpython:
   #!/bin/bash
   set -euo pipefail
