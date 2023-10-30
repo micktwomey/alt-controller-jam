@@ -12,7 +12,7 @@ import board
 import digitalio
 import usb_hid
 
-from alt_controller_jam.hid_gamepad import Gamepad
+from alt_controller_jam.experiments.hid_gamepad import Gamepad
 
 
 def main():

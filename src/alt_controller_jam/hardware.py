@@ -1,31 +1,35 @@
 """Alt-Controller-Jam Controller Hardware
-
-
-Layout (facing the board from the button side):
-
-     Header Pins
-     |o|o|o|o|o|
-
-         SW2
-          O
-    SW4 O   O SW1
-          O
-         SW3
-
-On bottom:
-
-    Header Pins
-    |SW1 |SW2 |SW3 |SW4 |GND|
-    |GP5 |GP4 |GP3 |GP2 |GND|
-    |GP9 |GP8 |GP7 |GP6 |GND|
-    |GP13|GP12|GP11|GP10|GND|
-    |GP18|GP19|GP20|GP21|GND|
 """
 
 import board
 
 
 class Board:
+    """Hardware boards
+
+    Layout (facing the board from the button side):
+
+        Header Pins
+        |o|o|o|o|o|
+
+            SW2
+            O
+        SW4 O   O SW1
+            O
+            SW3
+
+    On bottom:
+
+        Header Pins
+        |SW1 |SW2 |SW3 |SW4 |GND|
+        |GP5 |GP4 |GP3 |GP2 |GND|
+        |GP9 |GP8 |GP7 |GP6 |GND|
+        |GP13|GP12|GP11|GP10|GND|
+        |GP18|GP19|GP20|GP21|GND|
+
+    Header pins are grouped by matching sets on the pico
+    """
+
     TOP = [board.GP4, board.GP8, board.GP12, board.GP19]  # SW2
     BOTTOM = [board.GP3, board.GP7, board.GP11, board.GP20]  # SW3
     LEFT = [board.GP2, board.GP6, board.GP10, board.GP21]  # SW5
@@ -33,31 +37,31 @@ class Board:
 
 
 class FirstBoard:
+    TOP = Board.TOP[0]  # SW2
+    BOTTOM = Board.BOTTOM[0]  # SW3
+    LEFT = Board.LEFT[0]  # SW4
+    RIGHT = Board.RIGHT[0]  # SW1
+
+
+class SecondBoard:
     TOP = Board.TOP[1]  # SW2
     BOTTOM = Board.BOTTOM[1]  # SW3
     LEFT = Board.LEFT[1]  # SW4
     RIGHT = Board.RIGHT[1]  # SW1
 
 
-class SecondBoard:
+class ThirdBoard:
     TOP = Board.TOP[2]  # SW2
     BOTTOM = Board.BOTTOM[2]  # SW3
     LEFT = Board.LEFT[2]  # SW4
     RIGHT = Board.RIGHT[2]  # SW1
 
 
-class ThirdBoard:
+class FourthBoard:
     TOP = Board.TOP[3]  # SW2
     BOTTOM = Board.BOTTOM[3]  # SW3
     LEFT = Board.LEFT[3]  # SW4
     RIGHT = Board.RIGHT[3]  # SW1
-
-
-class FourthBoard:
-    TOP = Board.TOP[4]  # SW2
-    BOTTOM = Board.BOTTOM[4]  # SW3
-    LEFT = Board.LEFT[4]  # SW4
-    RIGHT = Board.RIGHT[4]  # SW1
 
 
 class DPad:

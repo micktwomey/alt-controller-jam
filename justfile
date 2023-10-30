@@ -21,6 +21,9 @@ mypy:
   poetry run mypy --ignore-missing-imports src
   poetry run mypy --ignore-missing-imports boards
 
+eject-circuitpython:
+  diskutil eject /Volumes/CIRCUITPY
+
 deploy-circuitpython:
   #!/bin/bash
   set -eux pipefail
