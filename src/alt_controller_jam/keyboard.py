@@ -4,7 +4,6 @@ import board
 import digitalio
 import usb_hid
 from adafruit_hid.keyboard import Keyboard
-from adafruit_hid.keycode import Keycode
 
 
 def main(configuration):
