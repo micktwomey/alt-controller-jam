@@ -53,3 +53,9 @@ You can make this process a little more efficient using:
 
 1. Run `just watch` to see which disk is mounted
 2. After plugging in the pico use `just install-firmware && just deploy && just eject` in another terminal to flash the firmware and install the code in one step.
+
+## Setting Up
+
+If you're using [devenv](https://devenv.sh/) then a `direnv allow` with activate it and install dependencies.
+
+Otherwise you need Python, [poetry](https://python-poetry.org/) and [just](https://just.systems/) installed.
