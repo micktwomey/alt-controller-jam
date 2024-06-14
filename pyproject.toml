@@ -11,9 +11,9 @@ packages = [{ include = "alt_controller_jam", from = "src" }]
 [tool.poetry.dependencies]
 python = "^3.11"
 adafruit-circuitpython-hid = "^6.0.1"
-turbocase = {git = "https://git.sr.ht/~martijnbraam/turbocase"}
 
 [tool.poetry.group.dev.dependencies]
+turbocase = { git = "https://git.sr.ht/~martijnbraam/turbocase" }
 mypy = "*"
 ruff = "*"
 black = "*"
