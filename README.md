@@ -20,7 +20,7 @@ The schematics can be found in [dpad](./dpad/).
 
 # Software
 
-The Pico runs [CircuitPython](https://circuitpython.org/) and uses Adafruit's HID library to emulate a keyboard. It's also possible to emulate a mouse and a gamepad (there are some experiments for gamepad emulation in [experiments](./src/alt_controller_jam/experiments/)).
+The Pico runs [CircuitPython](https://circuitpython.org/) and uses Adafruit's HID library to emulate a keyboard. It's also possible to emulate a mouse and a gamepad (there are some experiments for gamepad emulation in [experiments](./src/gamecraft_alt_controller_jam_board/experiments/)).
 
 Code execution order:
 
@@ -29,9 +29,9 @@ Code execution order:
 
 When running the library code lives in `lib` on the pico but lives in [src](./src/) here in GitHub.
 
-- [alt_controller_jam.configurations](./src/alt_controller_jam/configurations.py) contains different example keyboard mappings you can use.
-- [alt_controller_jam.hardware](./src/alt_controller_jam/hardware.py) contains mappings for pins.
-- [alt_controller_jam.keyboard](./src/alt_controller_jam/keyboard.py) contains the code which acts as a keyboard, responding to GPIO pins (button clicks) and sending out keycodes.
+- [gamecraft_alt_controller_jam_board.configurations](./src/gamecraft_alt_controller_jam_board/configurations.py) contains different example keyboard mappings you can use.
+- [gamecraft_alt_controller_jam_board.hardware](./src/gamecraft_alt_controller_jam_board/hardware.py) contains mappings for pins.
+- [gamecraft_alt_controller_jam_board.keyboard](./src/gamecraft_alt_controller_jam_board/keyboard.py) contains the code which acts as a keyboard, responding to GPIO pins (button clicks) and sending out keycodes.
 
 # Building and Deploying to a Pico
 
@@ -56,6 +56,6 @@ You can make this process a little more efficient using:
 
 ## Setting Up
 
-If you're using [devenv](https://devenv.sh/) then a `direnv allow` with activate it and install dependencies.
+If you're using [mise](https://mise.jdx.dev/) it should activate automatically.
 
-Otherwise you need Python, [poetry](https://python-poetry.org/) and [just](https://just.systems/) installed.
+Otherwise you need [uv](https://docs.astral.sh/uv/) and [just](https://just.systems/) installed.

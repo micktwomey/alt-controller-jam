@@ -18,19 +18,15 @@ repl serial_port:
     screen -R -S repl {{ serial_port }} 115200
 
 # Run all lint steps
-lint: black ruff mypy shellcheck
-
-black:
-    poetry run black src
-    poetry run black boards
+lint: ruff ty shellcheck
 
 ruff:
-    poetry run ruff check src
-    poetry run ruff check boards
+    ruff check src
+    ruff check boards
 
-mypy:
-    poetry run mypy --ignore-missing-imports src
-    poetry run mypy --ignore-missing-imports boards
+ty:
+    ty check src
+    ty check boards
 
 shellcheck:
     just shellcheck-target build
@@ -56,7 +52,7 @@ build dest=builddir:
         rm -rf {{ dest }}
     fi
     mkdir -p {{ dest }}/lib
-    poetry run pipkin -m {{ dest }} install .
+    pipkin -m {{ dest }} install .
     rm -r {{ dest }}/lib/*.dist-info
     cp boards/circuitpython/boot.py {{ dest }}/boot.py
     cp boards/circuitpython/code.py {{ dest }}/code.py

@@ -1,0 +1,12 @@
+[settings]
+python.uv_venv_auto = "create|source"
+
+[tools]
+just = "latest"
+"pipx:circup" = "latest"
+"pipx:pipkin" = "latest"
+"pipx:rshell" = "latest"
+ruff = "latest"
+shellcheck = "latest"
+ty = "latest"
+uv = "latest"

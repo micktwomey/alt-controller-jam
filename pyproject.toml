@@ -1,26 +1,25 @@
-[tool.poetry]
-name = "alt-controller-jam"
+[project]
+name = "gamecraft-alt-controller-jam-board"
 version = "0.1.0"
 description = "Gamecraft Alt-Controller-Jam 2023 Code"
-authors = ["Michael Twomey <mick@twomeylee.name>"]
-license = "MIT"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Michael Twomey", email = "mick@twomeylee.name" }
+]
+requires-python = ">=3.6"
+dependencies = [
+    "adafruit-circuitpython-debouncer>=2.0.15",
+    "adafruit-circuitpython-hid>=6.0.1",
+    "community-circuitpython-tca9555>=0.2.2",
+]
 
-packages = [{ include = "alt_controller_jam", from = "src" }]
+[project.urls]
+Homepage = "https://github.com/micktwomey/alt-controller-jam"
+Repository = "https://github.com/micktwomey/alt-controller-jam"
 
-[tool.poetry.dependencies]
-python = "^3.11"
-adafruit-circuitpython-hid = "^6.0.1"
-
-[tool.poetry.group.dev.dependencies]
-turbocase = { git = "https://git.sr.ht/~martijnbraam/turbocase" }
-mypy = "*"
-ruff = "*"
-black = "*"
-circup = "*"
-rshell = "*"
-pipkin = "*"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["uv_build>=0.11.29,<0.12.0"]
+build-backend = "uv_build"
