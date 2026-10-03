@@ -13,4 +13,4 @@ keyboard.main(configurations.PICO_8_PLAYER_1)
 # keyboard.main(configurations.NINTENDO)
 
 # Use this instead for arrow keys and wasd
-# keyboard.main(Sconfigurations.TEAM)
+# keyboard.main(Sconfigurations.STEAM)
